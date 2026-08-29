@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air.Power-Contact</title>
+    <!-- Link to the external CSS file -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="APC.css">
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+
+            </ul>
+            <ul class="navBar"><li class="brand"><img src="images/v3.png" alt="APC logo" class="nav-logo"><span>Air.Power</span></li>
+                <li class="hideOnMoblie"><a href="index.html">Home</a></li>
+                <li class="hideOnMoblie"><a href="services.html">Services</a></li>
+                <li class="hideOnMoblie"><a href="products.html">Product</a></li>
+                <li class="hideOnMoblie"><a class="active" href="contact.html">Contact</a></li>
+                <li class="morePx" onclick=showSildebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000  "><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="connect">
+        <section class="contact-hero">
+            <div class="hero-content">
+                <span class="hero-label">Contact Us</span>
+                <h1>Let's plan your gas solution</h1>
+                <p>Reach out for premium industrial gas supply, custom oxygen and nitrogen solutions, or expert support for your next project.</p>
+            </div>
+        </section>
+
+        <div class="contact-grid">
+            <div class="contact-card contact-info">
+                <div>
+                    <h2>Get in touch</h2>
+                    <p>Our team is ready to support your business with fast delivery, expert consultation, and tailored gas systems.</p>
+                </div>
+
+                <img class="contact-illustration" src="images/conntact.svg" alt="Contact support illustration">
+
+                <div class="info-item">
+                    <span>IN</span>
+                    <div>
+                        <strong>Office</strong>
+                        <p>Noida-201304, U.P., India</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span>@</span>
+                    <div>
+                        <strong>Email</strong>
+                        <p><a href="mailto:airpowercompanynoida15@gmail.com">airpowercompanynoida15@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span>+91</span>
+                    <div>
+                        <strong>Phone</strong>
+                        <p><a href="tel:+919810241427">+91 98102 41427</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-actions">
+                    <a href="tel:+919810241427">Call Now</a>
+                    <a href="mailto:airpowercompanynoida15@gmail.com">Email Us</a>
+                </div>
+            </div>
+
+            <div class="contact-card contact-form">
+                <form action="https://formspree.io/f/xwpvqabv" method="post">
+                    <div class="form-heading">
+                        <h2>Send an enquiry</h2>
+                        <p>Share a few details and we will contact you shortly.</p>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input id="name" type="text" name="Full Name" placeholder="Your name" autocomplete="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" type="tel" name="Phone" placeholder="+91 00000 00000" autocomplete="tel" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" name="E-mail" placeholder="you@example.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="requirement">Requirement</label>
+                        <select id="requirement" name="Requirement" required>
+                            <option value="" selected disabled>Select a service</option>
+                            <option>Oxygen plant</option>
+                            <option>Nitrogen plant</option>
+                            <option>Storage tank</option>
+                            <option>Control panel</option>
+                            <option>Service support</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="6" name="Message" placeholder="Tell us what you need" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="images/v3.png" alt="logo">
+                <p>Air power is a trusted manufacturer and supplier engaged in offering a varied range of products.</p>
+            </div>
+            <div class="col">
+                <h3>Office</h3>
+                <p>Air Power Company</p>
+                <p>Block 09/04GF, Sector-82</p>
+                <p>Noida-201304 (U.P), INDIA</p>
+                <p class="e-maill"><u>E-mail:- airpowercompanynoida15@gmail.com</u></p>
+                <p>M- 9810241427</p>
+            </div>
+            <div class="col">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="products.html">PRODUCT</a></li>
+                    <!--<li><a href="">CAREER</a></li>-->
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

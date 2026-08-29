@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air.Power</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="APC.css">
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Product</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="navBar">
+                <li class="brand"><img src="images/v3.png" alt="APC logo" class="nav-logo"><span>Air.Power</span></li>
+                <li class="hideOnMoblie"><a class="active" href="index.html">Home</a></li>
+                <li class="hideOnMoblie"><a href="services.html">Services</a></li>
+                <li class="hideOnMoblie"><a href="products.html">Product</a></li>
+                <li class="hideOnMoblie"><a href="contact.html">Contact</a></li>
+                <li class="morePx" onclick="showSildebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="site-page">
+        <section class="home-hero">
+            <div class="home-copy">
+                <span class="hero-label">Industrial Gas Solutions</span>
+                <h1>Reliable oxygen and nitrogen systems for modern industry</h1>
+                <p>Air Power designs, manufactures, supplies, and supports gas generation systems for manufacturing, healthcare, food processing, electronics, and process industries.</p>
+                <div class="hero-actions">
+                    <a href="products.html">Explore Products</a>
+                    <a href="contact.html">Request Quote</a>
+                </div>
+            </div>
+            <div class="card-slider" aria-label="Featured Air Power solutions">
+                <div class="slider-track">
+                    <article class="slide-card">
+                        <img src="images/300nm3.jpg" alt="Nitrogen gas plant">
+                        <h3>Nitrogen Plants</h3>
+                        <p>PSA and membrane systems for reliable on-site nitrogen generation.</p>
+                    </article>
+                    <article class="slide-card">
+                        <img src="images/o2.jpeg" alt="Oxygen gas plant">
+                        <h3>Oxygen Plants</h3>
+                        <p>Medical and industrial oxygen systems designed for stable purity.</p>
+                    </article>
+                    <article class="slide-card">
+                        <img src="images/PANEL.jpeg" alt="Control panel">
+                        <h3>Control Panels</h3>
+                        <p>Automation panels built for safer monitoring and smoother operation.</p>
+                    </article>
+                    <article class="slide-card">
+                        <img src="images/STORAGE TANK.jpeg" alt="Storage tank">
+                        <h3>Storage Tanks</h3>
+                        <p>Industrial storage solutions for dependable plant infrastructure.</p>
+                    </article>
+                    <article class="slide-card">
+                        <img src="images/300nm3.jpg" alt="Nitrogen gas plant">
+                        <h3>Nitrogen Plants</h3>
+                        <p>PSA and membrane systems for reliable on-site nitrogen generation.</p>
+                    </article>
+                    <article class="slide-card">
+                        <img src="images/o2.jpeg" alt="Oxygen gas plant">
+                        <h3>Oxygen Plants</h3>
+                        <p>Medical and industrial oxygen systems designed for stable purity.</p>
+                    </article>
+                    <article class="slide-card">
+                        <img src="images/PANEL.jpeg" alt="Control panel">
+                        <h3>Control Panels</h3>
+                        <p>Automation panels built for safer monitoring and smoother operation.</p>
+                    </article>
+                    <article class="slide-card">
+                        <img src="images/STORAGE TANK.jpeg" alt="Storage tank">
+                        <h3>Storage Tanks</h3>
+                        <p>Industrial storage solutions for dependable plant infrastructure.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-story">
+            <div class="story-media">
+                <img src="images/psa.jpg" alt="Industrial gas plant installation">
+            </div>
+            <div class="story-copy">
+                <span class="section-label">Our Journey</span>
+                <h2>Building a legacy of trust and innovation.</h2>
+                <p>Since our inception, Air Power has continued to evolve with the needs of modern industry. Our journey has been shaped by advanced engineering, practical production experience, and a deep understanding of customer requirements.</p>
+                <p>With a foundation built on quality, safety, and technical expertise, we support customers with reliable and cost-effective gas solutions while improving performance, purity, and efficiency through continuous development.</p>
+            </div>
+        </section>
+
+        <section class="home-products">
+            <div class="section-heading">
+                <span class="section-label">Our Products</span>
+                <h2>Innovation and precision at their best.</h2>
+            </div>
+            <div class="home-product-grid">
+                <article>
+                    <span class="product-mark mark-o2" aria-hidden="true">O2</span>
+                    <h3>Oxygen Systems</h3>
+                    <p>High-purity oxygen solutions for healthcare, metal cutting, welding, water treatment, and industrial processes.</p>
+                </article>
+                <article>
+                    <span class="product-mark mark-n2" aria-hidden="true">N2</span>
+                    <h3>Nitrogen Systems</h3>
+                    <p>PSA and membrane nitrogen generation for food preservation, electronics, pharmaceuticals, inerting, and purging.</p>
+                </article>
+                <article>
+                    <span class="product-mark mark-nh3" aria-hidden="true">NH3</span>
+                    <h3>Ammonia Crackers</h3>
+                    <p>Hydrogen-rich gas mixture generation for heat treatment, metallurgy, annealing, and brazing applications.</p>
+                </article>
+                <article>
+                    <span class="product-mark mark-panel" aria-hidden="true">PLC</span>
+                    <h3>Plant Equipment</h3>
+                    <p>Control panels, dryers, storage tanks, and support equipment engineered for dependable plant operation.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="home-solutions">
+            <div class="section-heading">
+                <span class="section-label">Why Choose Us</span>
+                <h2>Complete solutions that add value to your business.</h2>
+            </div>
+            <div class="solution-grid">
+                <article>
+                    <h3>Uncompromising Quality</h3>
+                    <p>Our products undergo careful testing to support safety, purity, efficiency, and reliable performance.</p>
+                </article>
+                <article>
+                    <h3>Cutting-Edge Technology</h3>
+                    <p>Advanced production techniques and automation help us deliver precision, reliability, and scalable plant performance.</p>
+                </article>
+                <article>
+                    <h3>Sustainability Commitment</h3>
+                    <p>We work to optimize processes, improve energy efficiency, reduce emissions, and support responsible operation.</p>
+                </article>
+                <article>
+                    <h3>Custom Solutions & Innovation</h3>
+                    <p>Our team collaborates with customers to develop tailored gas solutions for their application and operating needs.</p>
+                </article>
+                <article>
+                    <h3>Global Reach, Local Support</h3>
+                    <p>A strong support approach helps customers receive dependable delivery, responsive assistance, and long-term service.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="home-vision">
+            <div class="vision-card">
+                <span class="section-label">Our Vision</span>
+                <h2>To set new standards for quality, innovation, and sustainability.</h2>
+                <p>Our vision is to be a leading provider of industrial gas solutions trusted for dependable engineering, consistent quality, and future-ready technology.</p>
+            </div>
+            <div class="vision-card">
+                <span class="section-label">Our Mission</span>
+                <h2>To empower industries with high-purity gases and reliable equipment.</h2>
+                <ul>
+                    <li>Deliver high-purity industrial gases and practical equipment solutions.</li>
+                    <li>Continuously improve production processes for efficiency and environmental responsibility.</li>
+                    <li>Build long-term partnerships based on trust, reliability, and service.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="images/v3.png" alt="logo">
+                <p>Air power is a trusted manufacturer and supplier engaged in offering a varied range of products.</p>
+            </div>
+            <div class="col">
+                <h3>Office</h3>
+                <p>Air Power Company</p>
+                <p>Block 09/04GF, Sector-82</p>
+                <p>Noida-201304 (U.P), INDIA</p>
+                <p class="e-maill"><u>E-mail:- airpowercompanynoida15@gmail.com</u></p>
+                <p>M- 9810241427</p>
+            </div>
+            <div class="col">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="products.html">PRODUCT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

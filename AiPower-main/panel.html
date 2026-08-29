@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air.Power-Control-Panel</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a class="active" href="products.html">Prodoct</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+            <ul class="navBar"><li class="brand"><img src="images/v3.png" alt="APC logo" class="nav-logo"><span>Air.Power</span></li>
+                <li class="hideOnMoblie"><a href="index.html">Home</a></li>
+                <li class="hideOnMoblie"><a href="services.html">Services</a></li>
+                <li class="hideOnMoblie"><a class="active" href="products.html">Prodoct</a></li>
+                <li class="hideOnMoblie"><a href="contact.html">Contact</a></li>
+                <li class="morePx" onclick=showSildebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000  "><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>                
+    </div>
+    <div class="prodBox">
+        <div class="productBar">
+            <ul>
+                <li>
+                    <button onclick= toggleSubMenu(this) class="dropdownBtn">
+                        <img class="icon" src="images/sy n2.png">
+                        <span>Nitrogen Gas Plant</span>
+                        <svg class="down"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        height="24px" 
+                        viewBox="0 -960 960 960" 
+                        width="24px" 
+                        fill="#000">
+                        <path 
+                        d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                        </svg>
+                    </button>
+                    <ul class="subMenu">
+                        <div>
+                            <li><a href="products.html">PSA Model</a></li>
+                            <li><a href="N2Mem.html">Membrane Model</a></li>
+                        </div>
+                    </ul>
+                    </li>
+
+                <li>
+                    <button onclick= toggleSubMenu(this) class="dropdownBtn">
+                        <img class="icon" src="images/sy o2.png">
+                        <span>Oxygen Gas Plant</span>
+                        <svg class="down"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        height="24px" 
+                        viewBox="0 -960 960 960" 
+                        width="24px" 
+                        fill="#000">
+                        <path 
+                        d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                        </svg>
+                    </button onclick= toggleSubMenu(this) class="dropdownBtn">
+                    <ul class="subMenu">
+                        <div>
+                            <li><a href="o2 Psa.html">PSA Model</a></li>
+                            <li><a href="O2 VPSA.HTML">VPSA Model</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <!--
+                <li>
+                    <button onclick= toggleSubMenu(this) class="dropdownBtn">
+                        <img class="icon" src="images/sy H2.png">
+                        <span>Hydrogen Gas Plant</span>
+                        <svg class="down"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        height="24px" 
+                        viewBox="0 -960 960 960" 
+                        width="24px" 
+                        fill="#000">
+                        <path 
+                        d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/>
+                        </svg>
+                    </button>
+                    <ul class="subMenu">
+                        <div>
+                            <li><a href="#">Grey Hydrogen</a></li>
+                            <li><a href="#">Blue Hydrogen</a></li>
+                            <li><a href="#">Green Hydrogen</a></li>
+                        </div>
+                    </ul>
+                </li>
+                -->
+                <li>
+                    <button>
+                        <img class="icon" src="images/NH3.png">
+                        <span><a href="NH3.HTML">Ammonia Craker</a></span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <svg class="icon"
+                        xmlns="http://www.w3.org/2000/svg" 
+                        height="24px" 
+                        viewBox="0 -960 960 960" 
+                        width="24px" 
+                        fill="#000">
+                        <path 
+                        d="M480-240q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70Zm0-80q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm-28-132q11 11 28 11t28-11l56-56q11-11 11-28t-11-28q-11-11-28-11t-28 11l-56 56q-11 11-11 28t11 28ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/>
+                        </svg>
+                        <span><a class="active2" href="panel.html">Control Penel</a></span>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <img class="icon" src="images/SY tank.png">
+                        <span><a href="tank.html">Tank</a></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div id="PSA N2" class="productBody">
+            <div class="prodBody">
+                <div class="ContentArea">
+                    <h1 class="heading">Electrical Control Panel.</h1>
+                    <p><text class="prodContent">We are a leading manufacturer of high-quality electrical panels, 
+                        offering customized solutions for industrial, commercial, and residential applications. 
+                        With a focus on innovation, safety, and reliability, we design and build electrical panels 
+                        that meet industry standards and cater to the specific needs of our clients.</text></p>
+                    <text class="prodContent"><p>we specialize in designing and manufacturing high-performance 
+                        electrical panels tailored to the needs of industries, commercial establishments, 
+                        and residential projects. With years of experience and cutting-edge technology, 
+                        we provide reliable, safe, and efficient power distribution and control solutions.
+                    </p>
+                    <text class="prodContent"><p>
+                        Our Commitment<br>
+                        <ul class="mark">
+                            <li> Precision Engineering – Every panel is designed with accuracy and built to last.</li>
+                            <li>Safety First – We comply with national and international electrical safety standards.</li>
+                            <li>Innovation-Driven Solutions – We integrate smart technologies for enhanced performance.</li>
+                            <li>Customer-Centric Approach – We customize panels to meet unique industry requirements.</li>
+                        </ul>
+                        <div class="memImg">
+                            <img src="images/electric-control-panel.webp">
+                            <div class="getQ">
+                                <button class="Quote">Get Quote</button>
+                            </div>
+                    </div>
+                    <p>
+                        <br>
+                        <text class="prodHead"></text>
+                        <h3>Industries We Serve</h3>
+                    </p>
+                    <ul>
+                        <li>Manufacturing & Automation – High-efficiency control panels for industrial automation.</li>
+                        <li>Power & Energy – Panels for power distribution in renewable and conventional energy projects.</li>
+                        <li>Infrastructure & Utilities – Electrical solutions for smart cities, metro, and utilities.</li>
+                        <li>Commercial & Residential – Safe and optimized panels for buildings and housing projects.</li>
+                    </ul>
+                    </p>
+                    </text>
+                </div>            
+            </div>
+            <p>
+                <br>
+                <text class="prodHead"></text>
+                <h3>Our Expertise</h3>
+                <p>
+                    <ul>
+                        <li>Custom Electrical Panels – Tailored solutions for automation, power distribution, and control systems.</li>
+                        <li>High-Quality Components – We use top-grade materials and components from trusted brands to ensure durability and efficiency.</li>
+                        <li>Compliance & Safety – Our panels comply with national and international electrical standards, ensuring safety and reliability.</li>
+                        <li>Advanced Technology – We integrate the latest technology for energy efficiency, smart monitoring, and automation.</li>
+                    </ul>
+                </p>
+            </p>        
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="images/v3.png" alt="logo">
+                <p>Air power is a trusted manufacturer and supplier engaged in offering a varied range of products.</p>
+            </div>
+            <div class="col">
+                <h3>Office</h3>
+                <p>Air Power Company</p>
+                <p>Block 09/04GF, Sector-82</p>
+                <p>Noida-201304 (U.P), INDIA</p>
+                <p class="e-maill"><u>E-mail:- airpowercompanynoida15@gmail.com</u></p>
+                <p>M- 9810241427</p>
+            </div>
+            <div class="col">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="products.html">PRODUCT</a></li>
+                    <!--<li><a href="">CAREER</a></li>-->
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
